@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — Live Wallpaper</title>
+
+<style>
+:root{
+    --bg:#121212;
+    --card:#1e1e1e;
+    --text:#ffffff;
+    --secondary:#b0b0b0;
+    --accent:#4caf50;
+    --border:rgba(255,255,255,.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    max-width:900px;
+    margin:0 auto;
+    padding:24px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:32px;
+    box-shadow:0 8px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.last-update{
+    color:var(--secondary);
+    margin-bottom:30px;
+}
+
+h2{
+    margin-top:30px;
+    margin-bottom:12px;
+    color:var(--accent);
+    font-size:1.25rem;
+}
+
+p{
+    margin-bottom:12px;
+}
+
+ul{
+    margin:12px 0 12px 20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    text-align:center;
+    color:var(--secondary);
+    font-size:.9rem;
+}
+
+.fade-in{
+    opacity:0;
+    transform:translateY(20px);
+    transition:.6s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:16px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card fade-in">
+
+        <div class="header">
+            <h1>Политика конфиденциальности</h1>
+            <p class="last-update">
+                Дата последнего обновления: 13 июня 2026 г.
+            </p>
+        </div>
+
+        <p>
+            Приложение <strong>Live Wallpaper</strong> (далее — «Приложение»)
+            предназначено для установки видео в качестве живых обоев на устройствах Android.
+        </p>
+
+        <h2>1. Сбор данных</h2>
+        <p>
+            Приложение не требует регистрации и не собирает персональные данные пользователей.
+        </p>
+
+        <p>При использовании Приложения могут обрабатываться:</p>
+
+        <ul>
+            <li>выбранные пользователем видеофайлы;</li>
+            <li>техническая информация, необходимая для работы Приложения;</li>
+            <li>сведения о сбоях приложения (если используются инструменты диагностики).</li>
+        </ul>
+
+        <p>
+            Видеофайлы обрабатываются исключительно на устройстве пользователя
+            и не передаются разработчику.
+        </p>
+
+        <h2>2. Использование данных</h2>
+        <p>Информация используется только для:</p>
+
+        <ul>
+            <li>установки видео в качестве живых обоев;</li>
+            <li>обеспечения корректной работы Приложения;</li>
+            <li>исправления ошибок и повышения стабильности.</li>
+        </ul>
+
+        <h2>3. Доступ к файлам устройства</h2>
+        <p>
+            Для выбора видео Приложению может потребоваться доступ к медиафайлам устройства.
+        </p>
+
+        <p>
+            Доступ используется исключительно по назначению и только после
+            предоставления соответствующего разрешения пользователем.
+        </p>
+
+        <h2>4. Передача данных третьим лицам</h2>
+        <p>
+            Приложение не продает, не передает и не предоставляет персональные данные
+            пользователей третьим лицам.
+        </p>
+
+        <h2>5. Безопасность</h2>
+        <p>
+            Все операции выполняются локально на устройстве пользователя.
+            Разработчик принимает разумные меры для обеспечения безопасности Приложения.
+        </p>
+
+        <h2>6. Конфиденциальность детей</h2>
+        <p>
+            Приложение не предназначено специально для детей младше 13 лет.
+        </p>
+
+        <h2>7. Изменения политики</h2>
+        <p>
+            Настоящая Политика конфиденциальности может быть изменена в любое время.
+            Актуальная версия публикуется вместе с Приложением.
+        </p>
+
+        <h2>8. Контакты</h2>
+        <p>
+            По вопросам, связанным с Политикой конфиденциальности, пользователь
+            может связаться с разработчиком через GitHub-репозиторий проекта.
+        </p>
+
+        <div class="footer">
+            © 2026 Live Wallpaper. Все права защищены.
+        </div>
+
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const card = document.querySelector(".fade-in");
+
+    setTimeout(() => {
+        card.classList.add("show");
+    }, 150);
+});
+</script>
+
+</body>
+</html>
